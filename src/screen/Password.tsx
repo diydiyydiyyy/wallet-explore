@@ -44,6 +44,7 @@ export default function Password() {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>WALLET APP</Text>
       <Text>Input Password :</Text>
       <TextInput value={password} onChangeText={(e) => setPassword(e)} placeholder='Input Password' style={styles.input} />
       <TouchableOpacity style={[styles.button, {backgroundColor: password?.length < 8 ? '#772174BF' : '#772174'}]} onPress={createWallet} disabled={password?.length < 8}>
@@ -83,5 +84,9 @@ const styles = StyleSheet.create({
     color: 'white',
     textAlign: 'center',
     textTransform: 'none',
+  },
+  title : {
+    fontSize: 32,
+    fontWeight: '600',
   },
 });
