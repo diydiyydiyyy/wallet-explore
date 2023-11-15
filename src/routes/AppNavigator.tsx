@@ -10,8 +10,8 @@ const Stack = createStackNavigator();
 const AppNavigator = () => (
   <NavigationContainer>
     <Stack.Navigator>
-      <Stack.Screen name="Index" component={Password} options={{headerShown: false}} />
-      <Stack.Screen name="Two" component={Home} options={{headerShown: false}} />
+      <Stack.Screen name="Password" component={Password} options={{headerShown: false}} />
+      <Stack.Screen name="Home" component={Home} options={{headerShown: false}} />
       {/* Tambahkan screen lain di sini jika diperlukan */}
     </Stack.Navigator>
   </NavigationContainer>
